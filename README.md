@@ -47,7 +47,7 @@ Desarrollo.
     print(f"Área superficial total: {area:.3f}")
 
   
-   2. Dado la figura de la imagen, desarrolle:
+  2. Dado la figura de la imagen, desarrolle:
       ![68747470733a2f2f692e706f7374696d672e63632f3174344d727a734c2f696d6167652e706e67](https://github.com/user-attachments/assets/ed049e48-17cb-4e87-a7f4-8477fc97583a)
       
    Una función matemática para calcular el área y el perimetro.
@@ -80,7 +80,7 @@ Desarrollo.
     print(f"Área: {area:.2f}")
     print(f"Perímetro: {perimetro:.2f}")
 
-4. Diseñe una función que calcule la cantidad de carne de aves en kilos si se tienen N gallinas, M gallos y K pollitos cada uno pesando 6 kilos, 7 kilos y 1 kilo respectivamente.
+3. Diseñe una función que calcule la cantidad de carne de aves en kilos si se tienen N gallinas, M gallos y K pollitos cada uno pesando 6 kilos, 7 kilos y 1 kilo respectivamente.
 Desarrollo.
 
        def calcular_carne_aves(G, M, P):
@@ -127,46 +127,37 @@ Desarrollo.
    La raíz cúbica del menor número
 
    Respuesta
-   
-    
-   #Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
 
-   # El promedio
-   # El promedio multiplicativo (multilplica todos y luego calcula la raíz de la cantidad de operandos)
-   # La potencia del mayor número elevado al menor número
-   # La raíz cúbica del menor número
-Respuesta.
+       import math
 
-    import math
+       def promedio(numeros):
+           return sum(numeros) / len(numeros)
 
-    def promedio(numeros):
-        return sum(numeros) / len(numeros)
+       def promedio_multiplicativo(numeros):
+           return (numeros[0] * numeros[1] * numeros[2] * numeros[3] * numeros[4]) ** (1/5)
 
-    def promedio_multiplicativo(numeros):
-        return (numeros[0] * numeros[1] * numeros[2] * numeros[3] * numeros[4]) ** (1/5)
-
-    def potencia_mayor_menor(numeros):
-        mayor = max(numeros)
-        menor = min(numeros)
+       def potencia_mayor_menor(numeros):
+           mayor = max(numeros)
+           menor = min(numeros)
         return mayor ** menor
 
-    raiz_cubica_menor(numeros):
-        menor = min(numeros)
-        return menor ** (1/3)
+       raiz_cubica_menor(numeros):
+           menor = min(numeros)
+           return menor ** (1/3)
 
-    n1 = float(input("Ingrese el número 1: "))
-    n2 = float(input("Ingrese el número 2: "))
-    n3 = float(input("Ingrese el número 3: "))
-    n4 = float(input("Ingrese el número 4: "))
-    n5 = float(input("Ingrese el número 5: "))
-
-    numeros = [n1, n2, n3, n4, n5]
+       n1 = float(input("Ingrese el número 1: "))
+       n2 = float(input("Ingrese el número 2: "))
+       n3 = float(input("Ingrese el número 3: "))
+       n4 = float(input("Ingrese el número 4: "))
+       n5 = float(input("Ingrese el número 5: "))
+ 
+       numeros = [n1, n2, n3, n4, n5]
 
  
-    print(f"Promedio: {promedio(numeros):.2f}")
-    print(f"Promedio multiplicativo: {promedio_multiplicativo(numeros):.2f}")
-    print(f"Potencia del mayor elevado al menor: {potencia_mayor_menor(numeros):.2f}")
-    print(f"Raíz cúbica del menor número: {raiz_cubica_menor(numeros):.2f}")
+       print(f"Promedio: {promedio(numeros):.2f}")
+       print(f"Promedio multiplicativo: {promedio_multiplicativo(numeros):.2f}")
+       print(f"Potencia del mayor elevado al menor: {potencia_mayor_menor(numeros):.2f}")
+       print(f"Raíz cúbica del menor número: {raiz_cubica_menor(numeros):.2f}")
 
 6. Consultar qué es y cómo funciona pip en python.
 pip es el sistema de gestión de paquetes por defecto para Python. Su nombre significa “Pip Installs Packages” y permite instalar, actualizar y desinstalar paquetes o módulos que no están incluidos en la biblioteca estándar de Python.
